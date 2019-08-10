@@ -11,13 +11,9 @@
 |
 */
 
-Route::get('/', function () {
-    return view('list');
-});
-
-Route::get('/add', function () {
-    return view('add');
-});
+Route::get('/', 'AnimeController@index')->name('anime.index');
+Route::get('/add', 'AnimeController@create')->name('anime.create');
+Route::post('/create', 'AnimeController@store')->name('anime.store');
 
 Auth::routes();
 

@@ -12,7 +12,8 @@ class Episode extends Model
      * @var array
      */
     protected $fillable = [
-        'ep'
+        'ep',
+        'anime_id',
     ];
 }
 

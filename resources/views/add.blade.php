@@ -8,7 +8,7 @@
                 <div class="card-header">Adicionar animes</div>
 
                 <div class="card-body">
-                    <form method="POST" action="">
+                    <form method="POST" action="{{ route('anime.store') }}">
                         @csrf
                             <div class="form-group">
                                 <label for="addanimeform">Nome do anime</label>
